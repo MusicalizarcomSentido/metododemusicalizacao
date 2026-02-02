@@ -720,22 +720,23 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
     </section>
 
     <!-- Final CTA -->
-    <section class="final-cta">
-        <div class="final-cta-content">
-            <h2>Pronta para transformar suas aulas?</h2>
-            <p>Este é um método estruturado de musicalização infantil, pensado para quem ensina de verdade.</p>
-            <p style="font-weight: 600; font-size: 1.6rem;">Mais do que ensinar músicas, você aprende a ensinar musicalmente.</p>
-            
-            <div class="price-container">
-                <div class="old-price">De R$ 197</div>
-                <div class="new-price">3x de R$ 9,64</div>
-                <p style="font-size: 1.3rem; margin-top: 10px; opacity: 0.9;">ou R$ 27,00 à vista</p>
-                <div class="price-highlight">🎉 Oferta especial por tempo limitado</div>
-            </div>
-            
-            <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 15px; padding: 35px; margin: 40px auto; max-width: 500px; border: 1px solid rgba(255, 255, 255, 0.2); text-align: left;">
-                <h3 style="text-align: center; margin-bottom: 25px; font-size: 1.4rem;">🎁 Você vai receber:</h3<ul style="list-style: none; padding: 0; margin: 0; font-size: 1.1rem; line-height: 2.2;">
-                    <li>✓ 30 Planos de Aula Completos</li>
+<section class="final-cta">
+    <div class="final-cta-content">
+        <h2>Pronta para transformar suas aulas?</h2>
+        <p>Este é um método estruturado de musicalização infantil, pensado para quem ensina de verdade.</p>
+        <p style="font-weight: 600; font-size: 1.6rem;">Mais do que ensinar músicas, você aprende a ensinar musicalmente.</p>
+
+        <div class="price-container">
+            <div class="old-price">De R$ 197</div>
+            <div class="new-price">3x de R$ 9,64</div>
+            <p style="font-size: 1.3rem; margin-top: 10px; opacity: 0.9;">ou R$ 27,00 à vista</p>
+            <div class="price-highlight">🎉 Oferta especial por tempo limitado</div>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 15px; padding: 35px; margin: 40px auto; max-width: 500px; border: 1px solid rgba(255, 255, 255, 0.2); text-align: left;">
+            <h3 style="text-align: center; margin-bottom: 25px; font-size: 1.4rem;">🎁 Você vai receber:</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.1rem; line-height: 2.2;">
+                <li>✓ 30 Planos de Aula Completos</li>
                 <li>✓ Explicações Detalhadas Passo a Passo</li>
                 <li>✓ Repertório Musical Completo</li>
                 <li>✓ Bônus: Playlist de Repertório</li>
@@ -744,46 +745,13 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
                 <li>✓ Atualizações Futuras Gratuitas</li>
             </ul>
         </div>
-        
-        <a href="https://pay.hotmart.com/S104193167O" class="cta-button-large">QUERO RECEBER MINHA APOSTILA</a>
-        <p style="font-size: 0.9rem; margin-top: 20px; opacity: 0.8;">✅ Acesso imediato • 🎁 Bônus inclusos • 🔒 Compra 100% segura</p>
+
+        <a href="https://pay.hotmart.com/S104193167O" class="cta-button-large" onclick="fbq('track','ViewContent');">
+            QUERO RECEBER MINHA APOSTILA
+        </a>
+
+        <p style="font-size: 0.9rem; margin-top: 20px; opacity: 0.8;">
+            ✅ Acesso imediato • 🎁 Bônus inclusos • 🔒 Compra 100% segura
+        </p>
     </div>
 </section>
-
-<script>
-    // FAQ Accordion
-    document.querySelectorAll('.faq-question').forEach(question => {
-        question.addEventListener('click', () => {
-            const faqItem = question.parentElement;
-            const wasActive = faqItem.classList.contains('active');
-            
-            // Fecha todos os FAQs
-            document.querySelectorAll('.faq-item').forEach(item => {
-                item.classList.remove('active');
-            });
-            
-            // Abre o clicado se não estava ativo
-            if (!wasActive) {
-                faqItem.classList.add('active');
-            }
-        });
-    });
-
-    // Scroll reveal animation
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.scroll-reveal').forEach(el => {
-        observer.observe(el);
-    });
-</script>
