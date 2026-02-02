@@ -59,15 +59,6 @@
 }
 </script>
 
-<!-- Google Analytics (Cole seu ID quando criar a conta) -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script> -->
-
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -247,6 +238,21 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
             font-style: italic;
         }
 
+        .micro-cta-box {
+            text-align: center;
+            margin: 40px 0;
+            padding: 35px;
+            background: rgba(46, 82, 102, 0.05);
+            border-radius: 15px;
+        }
+
+        .micro-cta-box p {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--cor-primaria);
+            margin-bottom: 20px;
+        }
+
         /* Features Section */
         .features-section {
             background: white;
@@ -289,62 +295,6 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
         .feature-card p {
             color: var(--cor-texto-claro);
             font-size: 1.05rem;
-        }
-
-        /* Structure Section */
-        .structure-section {
-            background: var(--cor-primaria);
-            color: white;
-            padding: 100px 40px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .structure-section::before {
-            content: '';
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(214, 139, 96, 0.2) 0%, transparent 70%);
-            top: -200px;
-            right: -200px;
-            border-radius: 50%;
-        }
-
-        .structure-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .step-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .step-card:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: scale(1.05);
-        }
-
-        .step-number {
-            font-family: 'DM Serif Display', serif;
-            font-size: 3rem;
-            color: var(--cor-secundaria);
-            margin-bottom: 15px;
-        }
-
-        .step-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            font-weight: 600;
         }
 
         /* Benefits Section */
@@ -393,74 +343,6 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
             justify-content: center;
             font-weight: bold;
             font-size: 1.2rem;
-        }
-
-        /* Target Section */
-        .target-section {
-            background: linear-gradient(135deg, var(--cor-secundaria) 0%, #c67a50 100%);
-            color: white;
-            padding: 100px 40px;
-            text-align: center;
-        }
-
-        .target-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .target-item {
-            padding: 30px 20px;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            font-size: 1.1rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .target-item:hover {
-            background: rgba(255, 255, 255, 0.25);
-            transform: scale(1.05);
-        }
-
-        /* Modules Section */
-        .modules-section {
-            background: white;
-            padding: 100px 40px;
-        }
-
-        .modules-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 60px;
-        }
-
-        .module-card {
-            padding: 30px;
-            background: linear-gradient(135deg, var(--cor-clara) 0%, #fff 100%);
-            border-radius: 15px;
-            border-left: 4px solid var(--cor-primaria);
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .module-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        .module-card h3 {
-            color: var(--cor-primaria);
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            font-weight: 600;
         }
 
         /* Final CTA Section */
@@ -554,215 +436,6 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
-        /* Urgency Timer */
-        .urgency-section {
-            background: var(--cor-destaque);
-            color: white;
-            padding: 25px 40px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            animation: slideDown 0.5s ease-out;
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-            }
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        .urgency-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .urgency-text {
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-
-        .countdown {
-            display: flex;
-            gap: 15px;
-        }
-
-        .countdown-item {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            padding: 10px 15px;
-            border-radius: 8px;
-            min-width: 60px;
-        }
-
-        .countdown-number {
-            font-size: 1.8rem;
-            font-weight: bold;
-            display: block;
-            font-family: 'DM Serif Display', serif;
-        }
-
-        .countdown-label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            opacity: 0.9;
-        }
-
-        /* Social Proof */
-        .social-proof {
-            background: white;
-            padding: 60px 40px;
-            border-top: 1px solid #eee;
-            border-bottom: 1px solid #eee;
-        }
-
-        .testimonials {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .testimonial-card {
-            background: #f9f9f9;
-            padding: 30px;
-            border-radius: 15px;
-            border-left: 4px solid var(--cor-secundaria);
-            position: relative;
-        }
-
-        .testimonial-quote {
-            font-size: 1.1rem;
-            font-style: italic;
-            color: var(--cor-texto-claro);
-            margin-bottom: 20px;
-            line-height: 1.7;
-        }
-
-        .testimonial-author {
-            font-weight: 600;
-            color: var(--cor-primaria);
-        }
-
-        .testimonial-role {
-            font-size: 0.9rem;
-            color: var(--cor-texto-claro);
-        }
-
-        .stats-container {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            margin-top: 50px;
-            flex-wrap: wrap;
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-family: 'DM Serif Display', serif;
-            font-size: 3rem;
-            color: var(--cor-destaque);
-            font-weight: bold;
-        }
-
-        .stat-label {
-            font-size: 1rem;
-            color: var(--cor-texto-claro);
-            margin-top: 5px;
-        }
-
-        /* Guarantee Section */
-        .guarantee-section {
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-            padding: 80px 40px;
-            text-align: center;
-        }
-
-        .guarantee-badge {
-            display: inline-block;
-            background: var(--cor-secundaria);
-            color: white;
-            padding: 40px;
-            border-radius: 50%;
-            font-size: 3rem;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(214, 139, 96, 0.3);
-        }
-
-        .guarantee-title {
-            font-family: 'DM Serif Display', serif;
-            font-size: 2.5rem;
-            color: var(--cor-primaria);
-            margin-bottom: 20px;
-        }
-
-        .guarantee-text {
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 1.2rem;
-            color: var(--cor-texto-claro);
-            line-height: 1.8;
-        }
-
-        /* Bonus Section */
-        .bonus-section {
-            background: var(--cor-clara);
-            padding: 80px 40px;
-        }
-
-        .bonus-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .bonus-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            border-top: 3px solid var(--cor-destaque);
-            position: relative;
-        }
-
-        .bonus-badge {
-            position: absolute;
-            top: -15px;
-            right: 20px;
-            background: var(--cor-destaque);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        .bonus-card h3 {
-            color: var(--cor-primaria);
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-        }
-
-        .bonus-value {
-            color: var(--cor-secundaria);
-            font-weight: 600;
-            font-size: 1.1rem;
-            margin-top: 15px;
-        }
-
         /* FAQ Section */
         .faq-section {
             background: white;
@@ -825,27 +498,6 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
             max-height: 500px;
         }
 
-        /* Scarcity Badge */
-        .scarcity-badge {
-            display: inline-block;
-            background: #ff4444;
-            color: white;
-            padding: 10px 25px;
-            border-radius: 30px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-        }
-
         /* Animations */
         @keyframes fadeIn {
             from {
@@ -897,69 +549,13 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
                 font-size: 1.2rem;
             }
 
-            .urgency-section {
-                padding: 20px 25px;
-            }
-
-            .urgency-content {
-                gap: 15px;
-            }
-
-            .urgency-text {
-                font-size: 0.95rem;
-            }
-
-            .countdown {
-                gap: 10px;
-            }
-
-            .countdown-item {
-                min-width: 50px;
-                padding: 8px 10px;
-            }
-
-            .countdown-number {
-                font-size: 1.4rem;
-            }
-
-            .testimonials,
-            .bonus-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-container {
-                gap: 30px;
-            }
-
-            .guarantee-badge {
-                padding: 30px;
-                font-size: 2rem;
-            }
-
-            .guarantee-title {
-                font-size: 1.8rem;
-            }
-
-            .new-price {
-                font-size: 2.5rem;
-            }
-
-            .features-grid,
-            .structure-steps,
-            .target-grid,
-            .modules-grid {
+            .features-grid {
                 grid-template-columns: 1fr;
             }
 
             .problem-section,
             .features-section,
-            .structure-section,
             .benefits-section,
-            .target-section,
-            .modules-section,
-            .social-proof,
-            .bonus-section,
-            .guarantee-section,
             .faq-section {
                 padding: 60px 25px;
             }
@@ -980,6 +576,10 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
                 padding: 20px 40px;
                 font-size: 1.2rem;
             }
+
+            .new-price {
+                font-size: 2.5rem;
+            }
         }
     </style>
 </head>
@@ -987,44 +587,30 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">✨ Material completo e pronto para usar</div>
-            <h1>Método de Musicalização Infantil</h1>
-            <p class="hero-subtitle">Um guia prático para professores que ensinam com música de verdade</p>
-            <a href="https://pay.hotmart.com/S104193167O" class="cta-button">Quero conhecer o método</a>
-        </div>
-    </section>
-
-    <!-- Urgency Bar -->
-    <section class="urgency-section">
-        <div class="urgency-content">
-            <span class="urgency-text">⚡ PROMOÇÃO TERMINA EM:</span>
-            <div class="countdown">
-                <div class="countdown-item">
-                    <span class="countdown-number" id="hours">00</span>
-                    <span class="countdown-label">Horas</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-number" id="minutes">00</span>
-                    <span class="countdown-label">Minutos</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-number" id="seconds">00</span>
-                    <span class="countdown-label">Segundos</span>
-                </div>
-            </div>
+            <div class="hero-badge">✨ Nascido de 5 anos de prática real em sala de aula</div>
+            <h1>30 Aulas de Musicalização Prontas Para Você Aplicar Amanhã</h1>
+            <p class="hero-subtitle">Um método completo que ajuda crianças a desenvolverem atenção, escuta e vínculo com a música — mesmo se você está começando agora</p>
+            <a href="https://pay.hotmart.com/S104193167O" class="cta-button">QUERO CONHECER O MÉTODO</a>
         </div>
     </section>
 
     <!-- Problem Section -->
     <section class="problem-section">
         <div class="section-content scroll-reveal">
-            <h2>Ensinar música para crianças pequenas não é simples</h2>
-            <p class="problem-text">Elas ainda não respondem bem a longas explicações, precisam de movimento, repetição, afeto e comandos claros. Muitos professores sabem o que querem trabalhar, mas sentem dificuldade em organizar a aula e conduzir o grupo sem depender o tempo todo da fala.</p>
+            <h2>Você passa horas planejando aulas que deveriam fluir naturalmente?</h2>
+            <p class="problem-text">Crianças pequenas não respondem bem a longas explicações. Elas precisam de movimento, repetição, afeto e comandos claros através da música.</p>
+            <p class="problem-text">Muitos professores sabem o que querem trabalhar, mas sentem dificuldade em organizar a aula e conduzir o grupo sem depender o tempo todo da fala.</p>
+            
+            <div class="micro-cta-box">
+                <p>Isso faz sentido para você?</p>
+                <a href="https://pay.hotmart.com/S104193167O" class="cta-button">SIM, QUERO UMA SOLUÇÃO</a>
+            </div>
+            
             <div class="highlight-box">
                 <p>Este método foi criado para resolver isso. Aqui, a música não é apenas conteúdo — ela é a principal forma de comunicação com a criança.</p>
             </div>
-            <div class="highlight-box" style="margin-top: 30px; border-left-color: var(--cor-primaria);">
-                <p>Desenvolvido ao longo de 5 anos dando aulas de musicalização todos os dias, este material nasceu da prática real em sala de aula.</p>
+            <div class="highlight-box" style="margin-top: 30px; border-left-color: var(--cor-secundaria); background: #fff9f5;">
+                <p style="font-style: normal; font-weight: 400; color: var(--cor-texto);">"Esse método nasceu da minha prática como educadora musical. Depois de 5 anos trabalhando com crianças todos os dias, organizei tudo que realmente funciona em sala de aula."</p>
             </div>
         </div>
     </section>
@@ -1052,7 +638,7 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
                 <div class="feature-card scroll-reveal">
                     <div class="feature-icon">👶</div>
                     <h3>Pensado para Crianças Pequenas</h3>
-                    <p>Atividades desenvolvidas a partir de 5 anos de experiência real em sala de aula, todos os dias</p>
+                    <p>Atividades desenvolvidas a partir de 5 anos de experiência real em sala de aula</p>
                 </div>
                 <div class="feature-card scroll-reveal">
                     <div class="feature-icon">🎓</div>
@@ -1065,40 +651,18 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
                     <p>Trabalha corpo, voz, escuta, movimento e instrumentos de forma integrada</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Structure Section -->
-    <section class="structure-section">
-        <div class="section-content">
-            <h2 style="text-align: center;">Como as aulas funcionam</h2>
-            <p style="text-align: center; font-size: 1.2rem; margin-top: 20px; opacity: 0.95;">Todas as aulas seguem a mesma estrutura, trazendo segurança e previsibilidade para a criança e para o professor</p>
-            <div class="structure-steps">
-                <div class="step-card scroll-reveal">
-                    <div class="step-number">1</div>
-                    <h3>Acolhida</h3>
-                </div>
-                <div class="step-card scroll-reveal">
-                    <div class="step-number">2</div>
-                    <h3>Vivência rítmico-corporal e percepção</h3>
-                </div>
-                <div class="step-card scroll-reveal">
-                    <div class="step-number">3</div>
-                    <h3>Exploração sonora, canto e/ou instrumentos</h3>
-                </div>
-                <div class="step-card scroll-reveal">
-                    <div class="step-number">4</div>
-                    <h3>Relaxamento e despedida</h3>
-                </div>
+            
+            <div class="micro-cta-box" style="margin-top: 50px;">
+                <p>Quer aplicar isso na sua prática?</p>
+                <a href="https://pay.hotmart.com/S104193167O" class="cta-button">QUERO RECEBER O MATERIAL</a>
             </div>
-            <p style="text-align: center; font-size: 1.15rem; margin-top: 50px; opacity: 0.95;">A repetição dessa estrutura ajuda a criança a se organizar, antecipar o que vem a seguir e se envolver musicalmente.</p>
         </div>
     </section>
 
     <!-- Benefits Section -->
     <section class="benefits-section">
         <div class="section-content">
-            <h2 style="text-align: center;">Diferenciais do método</h2>
+            <h2 style="text-align: center;">O que torna este método diferente</h2>
             <ul class="benefits-list">
                 <li class="scroll-reveal">A música é o principal meio de comando, reduzindo a necessidade de fala</li>
                 <li class="scroll-reveal">As atividades desenvolvem corpo, voz, escuta, movimento e instrumentos</li>
@@ -1106,77 +670,11 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
                 <li class="scroll-reveal">Não exige domínio avançado de teoria musical</li>
                 <li class="scroll-reveal">Pode ser aplicado em aulas individuais, grupos ou escolas</li>
             </ul>
-            <div class="highlight-box scroll-reveal" style="margin-top: 50px;">
-                <p>Aqui, o professor aprende como conduzir musicalmente a aula, não apenas o que ensinar.</p>
+            
+            <div class="micro-cta-box" style="margin-top: 50px;">
+                <p>É assim que você gostaria de trabalhar?</p>
+                <a href="https://pay.hotmart.com/S104193167O" class="cta-button">QUERO APLICAR ESSE MÉTODO</a>
             </div>
-        </div>
-    </section>
-
-    <!-- Target Section -->
-    <section class="target-section">
-        <div class="section-content">
-            <h2>Para quem é este método</h2>
-            <p style="font-size: 1.2rem; margin-top: 20px;">Este material é indicado para:</p>
-            <div class="target-grid">
-                <div class="target-item scroll-reveal">Professores de musicalização infantil</div>
-                <div class="target-item scroll-reveal">Professores da educação infantil</div>
-                <div class="target-item scroll-reveal">Estudantes de música e pedagogia</div>
-                <div class="target-item scroll-reveal">Escolas de música</div>
-                <div class="target-item scroll-reveal">Projetos culturais e sociais</div>
-            </div>
-            <p style="font-size: 1.2rem; margin-top: 50px; max-width: 700px; margin-left: auto; margin-right: auto;">Se você busca um material que organize sua prática, fortaleça sua segurança em aula e coloque a música no centro do processo educativo, este método é para você.</p>
-        </div>
-    </section>
-
-    <!-- Modules Section -->
-    <section class="modules-section">
-        <div class="section-content">
-            <h2 style="text-align: center;">Organização do conteúdo</h2>
-            <p style="text-align: center; font-size: 1.15rem; margin-top: 20px; color: var(--cor-texto-claro);">O método pode ser utilizado como um todo ou dividido em módulos</p>
-            <div class="modules-grid">
-                <div class="module-card scroll-reveal">
-                    <h3>Corpo e pulsação</h3>
-                </div>
-                <div class="module-card scroll-reveal">
-                    <h3>Percepção e escuta</h3>
-                </div>
-                <div class="module-card scroll-reveal">
-                    <h3>Movimento e instrumentos</h3>
-                </div>
-                <div class="module-card scroll-reveal">
-                    <h3>Improvisação musical</h3>
-                </div>
-                <div class="module-card scroll-reveal">
-                    <h3>Trabalho em grupo</h3>
-                </div>
-                <div class="module-card scroll-reveal">
-                    <h3>Integração e síntese</h3>
-                </div>
-            </div>
-            <p style="text-align: center; font-size: 1.15rem; margin-top: 40px; color: var(--cor-texto-claro);">Isso permite aplicação flexível ao longo do semestre ou do ano letivo.</p>
-        </div>
-    </section>
-
-    <!-- Bonus Section -->
-    <section class="bonus-section">
-        <div class="section-content">
-            <h2 style="text-align: center;">Bônus Exclusivos Inclusos</h2>
-            <p style="text-align: center; font-size: 1.15rem; margin-top: 20px; color: var(--cor-texto-claro);">Adquira hoje e receba gratuitamente:</p>
-            <div class="bonus-grid">
-                <div class="bonus-card scroll-reveal">
-                    <span class="bonus-badge">BÔNUS #1</span>
-                    <h3>🎵 Playlist Completa de Repertório</h3>
-                    <p>Acesso a todas as músicas e cantigas utilizadas no método, organizadas por aula</p>
-                    <p class="bonus-value">Valor: R$ 47</p>
-                </div>
-                <div class="bonus-card scroll-reveal">
-                    <span class="bonus-badge">BÔNUS #2</span>
-                    <h3>📋 Guia de Adaptações</h3>
-                    <p>Como adaptar as atividades para diferentes faixas etárias e tamanhos de turma</p>
-                    <p class="bonus-value">Valor: R$ 37</p>
-                </div>
-            </div>
-            <p style="text-align: center; font-size: 1.3rem; margin-top: 40px; font-weight: 600; color: var(--cor-destaque);">Total em bônus: R$ 84 - GRÁTIS hoje!</p>
         </div>
     </section>
 
@@ -1222,10 +720,9 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
     </section>
 
     <!-- Final CTA -->
-    <section class="final-cta" id="contato">
+    <section class="final-cta">
         <div class="final-cta-content">
-            <div class="scarcity-badge">🔥 ÚLTIMAS VAGAS COM DESCONTO</div>
-            <h2>Mais do que um material de ideias</h2>
+            <h2>Pronta para transformar suas aulas?</h2>
             <p>Este é um método estruturado de musicalização infantil, pensado para quem ensina de verdade.</p>
             <p style="font-weight: 600; font-size: 1.6rem;">Mais do que ensinar músicas, você aprende a ensinar musicalmente.</p>
             
@@ -1234,125 +731,59 @@ src="https://www.facebook.com/tr?id=2369701513462126&ev=PageView&noscript=1"
                 <div class="new-price">3x de R$ 9,64</div>
                 <p style="font-size: 1.3rem; margin-top: 10px; opacity: 0.9;">ou R$ 27,00 à vista</p>
                 <div class="price-highlight">🎉 Oferta especial por tempo limitado</div>
-              
-            
-            <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 15px; padding: 35px; margin: 40px auto; max-width: 500px; border: 1px solid rgba(255, 255, 255, 0.2); text-align: left;">
-                <h3 style="text-align: center; margin-bottom: 25px; font-size: 1.4rem;">🎁 Você vai receber:</h3>
-                <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.1rem; line-height: 2.2;">
-                    <li>✓ 30 Planos de Aula Completos</li>
-                    <li>✓ Explicações Detalhadas Passo a Passo</li>
-                    <li>✓ Repertório Musical Completo</li>
-                    <li>✓ Bônus: Playlist de Repertório</li>
-                    <li>✓ Bônus: Guia de Adaptações</li>
-                    <li>✓ Acesso Vitalício ao Material</li>
-                    <li>✓ Atualizações Futuras Gratuitas</li>
-                </ul>
             </div>
             
-            <a href="https://pay.hotmart.com/S104193167O" class="cta-button-large">QUERO MINHA APOSTILA AGORA</a>
-            <p style="font-size: 0.9rem; margin-top: 20px; opacity: 0.8;">✅ Acesso imediato • 🎁 Bônus inclusos</p>
+            <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 15px; padding: 35px; margin: 40px auto; max-width: 500px; border: 1px solid rgba(255, 255, 255, 0.2); text-align: left;">
+                <h3 style="text-align: center; margin-bottom: 25px; font-size: 1.4rem;">🎁 Você vai receber:</h3<ul style="list-style: none; padding: 0; margin: 0; font-size: 1.1rem; line-height: 2.2;">
+                    <li>✓ 30 Planos de Aula Completos</li>
+                <li>✓ Explicações Detalhadas Passo a Passo</li>
+                <li>✓ Repertório Musical Completo</li>
+                <li>✓ Bônus: Playlist de Repertório</li>
+                <li>✓ Bônus: Guia de Adaptações</li>
+                <li>✓ Acesso Vitalício ao Material</li>
+                <li>✓ Atualizações Futuras Gratuitas</li>
+            </ul>
         </div>
-    </section>
+        
+        <a href="https://pay.hotmart.com/S104193167O" class="cta-button-large">QUERO RECEBER MINHA APOSTILA</a>
+        <p style="font-size: 0.9rem; margin-top: 20px; opacity: 0.8;">✅ Acesso imediato • 🎁 Bônus inclusos • 🔒 Compra 100% segura</p>
+    </div>
+</section>
 
-    <script>
-        // Countdown Timer (24 horas a partir do acesso)
-        function startCountdown() {
-            // Verifica se já existe um tempo final salvo
-            let countDownDate = localStorage.getItem('countdownEndTime');
+<script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const faqItem = question.parentElement;
+            const wasActive = faqItem.classList.contains('active');
             
-            if (!countDownDate) {
-                // Se não existe, cria um novo (24 horas a partir de agora)
-                countDownDate = new Date().getTime() + (24 * 60 * 60 * 1000);
-                localStorage.setItem('countdownEndTime', countDownDate);
-            } else {
-                countDownDate = parseInt(countDownDate);
+            // Fecha todos os FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Abre o clicado se não estava ativo
+            if (!wasActive) {
+                faqItem.classList.add('active');
             }
-
-            const x = setInterval(function() {
-                const now = new Date().getTime();
-                const distance = countDownDate - now;
-
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-                document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
-                document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-
-                if (distance < 0) {
-                    clearInterval(x);
-                    // Reinicia o contador para mais 24 horas
-                    localStorage.removeItem('countdownEndTime');
-                    startCountdown();
-                }
-            }, 1000);
-        }
-
-        startCountdown();
-
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                const wasActive = faqItem.classList.contains('active');
-                
-                // Fecha todos os FAQs
-                document.querySelectorAll('.faq-item').forEach(item => {
-                    item.classList.remove('active');
-                });
-                
-                // Abre o clicado se não estava ativo
-                if (!wasActive) {
-                    faqItem.classList.add('active');
-                }
-            });
         });
+    });
 
-        // Scroll reveal animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
+    // Scroll reveal animation
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.scroll-reveal').forEach(el => {
-            observer.observe(el);
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
         });
+    }, observerOptions);
 
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Analytics Event Tracking (exemplo - adapte para sua ferramenta)
-        document.querySelectorAll('.cta-button, .cta-button-large').forEach(button => {
-            button.addEventListener('click', function(e) {
-                // Google Analytics exemplo
-                // gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Compra'});
-                
-                // Facebook Pixel exemplo
-                // fbq('track', 'InitiateCheckout');
-                
-                console.log('CTA clicked - Track this event in your analytics platform');
-            });
-        });
-    </script>
-</body>
-</html>
+    document.querySelectorAll('.scroll-reveal').forEach(el => {
+        observer.observe(el);
+    });
+</script>
